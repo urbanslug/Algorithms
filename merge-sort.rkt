@@ -4,9 +4,7 @@
 (require scribble/srcdoc
          (for-doc racket/base scribble/manual))
 
-(provide merge-sort)
-
-(proc-doc/names merge-sort)
+(provide (proc-doc/names merge-sort [merge-sort (-> list? list?)]))
 
 
 (define (merge left right [accum empty])
