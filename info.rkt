@@ -5,4 +5,4 @@
 (define version "0.0.1")
 
 ;; ignore whatever is in graphite and this file as well
-(define test-omit-paths '("algos" "info.rkt"))
+(define test-omit-paths '("racket-algos" "info.rkt"))
