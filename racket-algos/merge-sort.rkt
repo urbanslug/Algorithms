@@ -5,7 +5,9 @@
          (for-doc racket/base scribble/manual))
 
 
-(provide (proc-doc/names merge (-> list? list? list?) (left right) @{Some other stuff}))
+(provide (proc-doc/names merge
+                         (-> list? list? list?) (left right)
+                         @{Some other stuff}))
 
 (define (merge left right [accum empty])
   (cond [(and (empty? left) (empty? right)) ;; base case
