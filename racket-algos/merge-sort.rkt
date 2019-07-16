@@ -4,10 +4,11 @@
 (require scribble/srcdoc
          (for-doc racket/base scribble/manual))
 
-
 (provide (proc-doc/names merge
                          (-> list? list? list?) (left right)
                          @{Some other stuff}))
+
+
 
 (define (merge left right [accum empty])
   (cond [(and (empty? left) (empty? right)) ;; base case
@@ -25,6 +26,7 @@
            (if (< i j)
                (merge (rest left) right (append accum (list i)))
                (merge left (rest right) (append accum (list j)))))]))
+
 
 (define (split-in-half l)
   (let-values ([(left right) (split-at l (quotient (length l) 2))])
