@@ -1,1 +1,1 @@
-A playground for testing racket libraries tools and anything else
+My solutions to some algorithms and data structures problems.

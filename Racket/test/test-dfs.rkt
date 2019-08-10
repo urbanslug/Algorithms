@@ -14,8 +14,6 @@
 
 (define g (list v1 v2 v3 v4 v5 v6))
 
-
-
 (check-equal?
  (dfs g)
  '(1 2 4 6 3 5))
